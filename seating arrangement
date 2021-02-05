@@ -1,0 +1,13 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    if n % 12 != 0 :
+        os=((n//12)+1)*12 - n%12+1
+    else:
+        os = n - 11
+    if os%6==0 or os%6==1 :
+        print(os ,  'WS')
+    elif os%6==2 or os%6==5 :
+        print(os ,  'MS')
+    elif os%6==3 or os%6==4:
+        print(os , 'AS')
